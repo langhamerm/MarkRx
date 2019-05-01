@@ -5,27 +5,13 @@ export default {
     getDoctors: function() {
         return axios.get("/api/doctors");
     },
-
-    // Gets all schedulers
-    getScheduler: function() {
-        return axios.get("/api/scheduler");
-    },
-    //get the scheduler with given id 
-    getSchedulerWithID: function(id) {
-        return axios.get("/api/scheduler/" + id);
-    },
-
-    // Gets all schedulers
+    // Gets all patient details
     getPatientDetails: function() {
         return axios.get("/api/patients");
     },
     // Saves a patient to the database
     savePatients: function(patientData){
         return axios.post("/api/patients", patientData);
-    },
-    // Saves a scheduler to the database
-    saveScheduler: function(schedulerData){
-        return axios.post("/api/scheduler", schedulerData);
     },
     // Saves a Doctor to the database
     saveDoctor: function(doctorData){
