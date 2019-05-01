@@ -7,7 +7,7 @@ mongoose.connect(
 );
 
 // Seed Patient Info to MongoDB
-const patient = [
+const pt = [
   {
     name: "Blake Blakington",
     age: 21,
@@ -112,9 +112,9 @@ const patient = [
   
 ];
 // console.log(db);
-db.Patient
+db.Pt
   .remove({})
-  .then(() => db.Patient.collection.insertMany(patient))
+  .then(() => db.Pt.collection.insertMany(pt))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
@@ -126,7 +126,7 @@ db.Patient
 
 
 // Seed Doctor Info to MongoDB
-const doctor = [
+const dr = [
   {
   name: "Arshad Gazi",
   phone: 8474460032,
@@ -141,9 +141,9 @@ const doctor = [
 }
 ];
 //console.log(db);
-db.Doctor
+db.Dr
 .remove({})
-.then(() => db.Doctor.collection.insertMany(doctor))
+.then(() => db.Dr.collection.insertMany(dr))
 .then(data => {
   console.log(data.result.n + " records inserted!");
   process.exit(0);
