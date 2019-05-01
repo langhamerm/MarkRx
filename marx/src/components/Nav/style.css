@@ -1,0 +1,18 @@
+.navbar{
+    background-color: black;
+    margin-bottom: 10px;
+    border-bottom: solid black 2px;
+    
+}
+.navbar-band{
+    color:white;
+    float: left;
+}
+
+.nav-item{
+    color: white;
+    /* margin-left: 35px;   */
+    margin-left: 700px;  
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
